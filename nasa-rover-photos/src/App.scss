@@ -1,0 +1,22 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+
+  #logo {
+    height: 32px;
+  }
+
+  #title {
+    font-size: 32px;
+    text-transform: uppercase;
+  }
+}
+
+.photo-container {
+  img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 7px;
+  }
+}
