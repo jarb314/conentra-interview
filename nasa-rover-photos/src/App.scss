@@ -1,3 +1,5 @@
+$red: #fc0d1b;
+
 body {
   background-color: #f4f6f8;
 }
@@ -30,7 +32,7 @@ nav {
   #copyright {
     z-index: 20;
     padding: 30px;
-    background-color: red;
+    background-color: $red;
     color: white;
     position: absolute;
     bottom: 0;
@@ -67,9 +69,17 @@ nav {
       object-fit: cover;
       aspect-ratio: 1;
       // border-radius: 7px;
+      transition: 0.2s;
 
       -webkit-box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
       box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+
+      &:hover {
+        // border-radius: 3px;
+        border: 7px solid $red;
+        -webkit-box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.3);
+        box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.3);
+      }
     }
 
     .right-components {
@@ -91,7 +101,7 @@ nav {
         text-transform: uppercase;
 
         &:hover {
-          color: red;
+          color: $red;
         }
       }
 
